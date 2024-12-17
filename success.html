@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+</head>
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="6603ea97-ace2-4d48-a40e-362db651b142">
+
+        <!-- Subject  -->
+        <input type="hidden" name="subject" value="FAQs">
+    
+
+        <!-- Honey Pot  -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+        <!-- From Name  -->
+        <input type="hidden" name="from_name" value="New Pathway Institute">
+
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        Name:<input type="text" name="name" required><br>
+        Email:<input type="email" name="email" required><br>
+        Message: <textarea name="message" required></textarea> <br>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="../form.html"> -->
+    
+        <button type="submit">Submit Form</button>
+    
+    </form>
+</body>
+</html>
