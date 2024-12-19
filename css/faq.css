@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=REM:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --title-font: "Bebas Neue", serif;
+  --para-font: "Playfair Display", serif;
+  --sec-font: "REM", serif;
+  --default-weight: 400;
+  --normal-font: normal;
+  --main-color: #030244;
+  --secndary-color: #3e4a86;
+  --support-color: #274563;
+}
+
+/* Require for Bebas Neue font 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+Require for Playfair Display 
+.playfair-display- {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400 to 900; 
+  font-style: normal;
+}
+
+Require for Rem font
+.rem{
+  font-family: "REM", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 to 900;
+  font-style: normal;
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Desktop  */
+@media screen and (min-width: 1024px){
+
+  .faq-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60vh;
+    background-color: green;
+  }
+  img {
+    width: 50%;
+    height: 20vh;
+  }
+  .faq-top-left {
+    flex-basis: 60%;
+    text-align: center;
+  }
+  .faq-top-left h1 {
+    font-family: var(--sec-font);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+  }
+  .faq-top-left p {
+    font-family: var(--para-font);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 45%;
+    margin: auto;
+    line-height: 2.5rem;
+  }
+  .faq-top-left p a {
+    display: block;
+    color: var(--main-color);
+  }
+  .faq-top-right {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+
+/* Phone  */
+@media screen and (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+}
+
+
+/* Tablet  */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  body {
+  background-color: blue;
+  }
+}
